@@ -1,8 +1,8 @@
 module.exports = {
     dialect:'postgres', // define o  SGDB a ser utilizado
     host:'localhost',
-    username:'postgres', // nome de usuário padrão no postgres
-    password:'root',
+    username:'vivian', // nome de usuário padrão no postgres
+    password:'vpo',
     database:'nps',
     define:{
         timestamps:true,
