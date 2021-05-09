@@ -1,4 +1,4 @@
-import app from './app/app.js'
+const app = require('./app/app')
 const PORT = 3000
 
 app.listen(PORT,()=>{

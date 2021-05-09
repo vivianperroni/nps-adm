@@ -1,4 +1,4 @@
-import express from 'express'
+const express = require ('express')
 const app = express()
 
 //Servir arquivos estáticos No express. 
@@ -12,4 +12,4 @@ app.set('views','./app/views')
 app.get('/',(req,res)=>{
     res.render('index')
 })
-export default app
+module.exports = app
