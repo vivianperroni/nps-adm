@@ -5,7 +5,7 @@ class Questao extends Model{
     static init(connection){
         super.init({
             descricao:DataTypes.STRING,
-            ativo:DataTypes.INTEGER,
+            ativo:DataTypes.TINYINT,
             created_at:DataTypes.DATE,
             updated_at:DataTypes.DATE
         },
