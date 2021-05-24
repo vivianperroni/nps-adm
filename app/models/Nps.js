@@ -1,6 +1,4 @@
 const { Model, DataTypes } = require('sequelize')
-const connection = require('../database/connection')
-
 class Nps extends Model{
     static init(connection){
         super.init({
@@ -16,5 +14,4 @@ class Nps extends Model{
     }
 }
 
-Nps.init(connection)
 module.exports = Nps

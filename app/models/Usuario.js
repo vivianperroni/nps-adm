@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize')
-const connection = require('../database/connection')
 
 class Usuario extends Model{
     static init(connection){
@@ -16,5 +15,4 @@ class Usuario extends Model{
     }
 }
 
-Usuario.init(connection)
 module.exports = Usuario
