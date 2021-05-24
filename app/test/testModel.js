@@ -1,3 +1,4 @@
+require('../database/connection')
 const Usuario = require('../models/Usuario')
 const Classificacao = require('../models/Classificacao')
 const Nps = require('../models/Nps')
