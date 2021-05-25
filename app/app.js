@@ -1,7 +1,9 @@
 require('./database/connection')
 const express = require ('express')
 const app = express()
+const router = require('./routes/web')
 
+app.use(router)
 //Servir arquivos estáticos No express. 
 app.use(express.static('public'))
 // configuração do template engine a ser utilizado na aplicação
