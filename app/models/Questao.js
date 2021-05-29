@@ -4,9 +4,7 @@ class Questao extends Model{
     static init(connection){
         super.init({
             descricao:DataTypes.STRING,
-            ativo:DataTypes.INTEGER,
-            created_at:DataTypes.DATE,
-            updated_at:DataTypes.DATE
+            ativo:DataTypes.TINYINT
         },
         {
             sequelize:connection,
