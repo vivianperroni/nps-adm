@@ -11,27 +11,27 @@ usuario.email = "vivian.perroni@hotmail.com"
 usuario.senha = "123"
 
 let classificacao = new Classificacao()
-classificacao.like = "27"
-classificacao.created_at = "05-05"
-classificacao.updated_at = "22-05"
-classificacao.questao_id = "54545466"
+classificacao.like = "1"
+classificacao.created_at = ""
+classificacao.updated_at = ""
+classificacao.questao_id = ""
 
 let nps = new Nps()
-nps.pontuacao = "100"
-nps.created_at = "05-06"
-nps.updated_at = "21-06"
+nps.pontuacao = "1"
+nps.created_at = ""
+nps.updated_at = ""
 
 let questao = new Questao()
 questao.descricao = "descrevendo"
-questao.ativo = "515151"
-questao.created_at = "05-07"
-questao.updated_at = "20-07"
+questao.ativo = "1"
+questao.created_at = ""
+questao.updated_at = ""
 
 let sugestoes = new Sugestoes()
 sugestoes.descricao = "descrevendo"
-sugestoes.created_at = "05-08"
-sugestoes.updated_at = "19-08"
-sugestoes.nps_id = "1515"
+sugestoes.created_at = ""
+sugestoes.updated_at = ""
+sugestoes.nps_id = ""
 
 usuario.save()
 classificacao.save()
