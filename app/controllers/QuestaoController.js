@@ -22,3 +22,5 @@ class QuestaoController {
     static destroy(req,res){
     }        
 }
+
+module.exports = QuestaoController

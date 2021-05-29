@@ -9,3 +9,5 @@ router.post('/questao/store',QuestaoController.store)
 router.get('/questao/edit/:id',QuestaoController.edit)
 router.post('/questao/update',QuestaoController.update)
 router.get('/questao/destroy/:id',QuestaoController.destroy)
+
+module.exports = router 
