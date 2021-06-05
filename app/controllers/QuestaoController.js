@@ -1,7 +1,8 @@
 const Questao = require('../models/Questao')
 class QuestaoController {
-    static index(req,res){
-        Questao.findAll()
+    static async index(req,res){
+        let questoes = await Questao.findAll({attributes:['id','descricao','ativo']}) 
+        res.render('questao/index',{questoes})
     }
     static create(req,res){
         res.render('questao/create')
@@ -9,7 +10,6 @@ class QuestaoController {
     static async store(req,res){
         let descricao = req.body.descricao
         let ativo = true
-
         let questao = new Questao()
         questao.descricao = descricao
         questao.ativo = ativo
@@ -19,7 +19,7 @@ class QuestaoController {
     static edit(req,res){
         Questao.findByPK(id)
     }
-    static update(req,res){
+    static async update(req,res){
         let descricao = req.body.descricao
         let ativo = true
 
@@ -29,7 +29,7 @@ class QuestaoController {
 		questao.ativo = ativo
 		await questao.save()
     }
-    static destroy(req,res){
+    static async destroy(req,res){
         let id = req.params.id
         let questao = await Questao.findByPK(id)
         await questao.destroy()

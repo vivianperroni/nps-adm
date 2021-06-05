@@ -6,6 +6,7 @@ const router = require('./routes/web')
 app.use(router)
 //Servir arquivos estáticos No express. 
 app.use(express.static('public'))
+app.use(express.urlencoded({extended: true}))
 // configuração do template engine a ser utilizado na aplicação
 app.set('view engine','ejs')
 // configuração do diretório da pasta views
