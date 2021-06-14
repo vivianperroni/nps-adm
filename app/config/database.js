@@ -1,12 +1,12 @@
 module.exports = {
-    dialect:'postgres', // define o  SGDB a ser utilizado
-    host:'localhost',
-    username:'vivian', // nome de usuário padrão no postgres
-    password:'vpo',
-    database:'nps',
+    dialect:process.env.DB_DIALECT, // define o  SGDB a ser utilizado
+    host:process.env.DB_HOST,
+    username:process.env.DB_USER, // nome de usuário padrão no postgres
+    password:process.env.DB_PASSWORD,
+    database:process.env.DB_NAME,
     define:{
         timestamps:true,
-				/* define a nomenclatura com separação de palavaras por (_) underline*/
-				underscored: true, 
+		/* define a nomenclatura com separação de palavaras por (_) underline*/
+		underscored: true, 
     }
 }
