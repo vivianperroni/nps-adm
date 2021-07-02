@@ -3,10 +3,12 @@ const express = require ('express')
 const router = require('./routes/web')
 const session = require('./config/session')
 const passport = require('passport')
+const routerApi = require('./routes/api')
 require('./config/auth')(passport)
 
 const app = express()
 
+app.use(routerApi)
 //Servir arquivos estáticos No express. 
 app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
